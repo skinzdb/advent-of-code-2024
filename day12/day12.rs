@@ -139,7 +139,7 @@ fn get_sides(shape: &Vec<(u32, u32)>) -> usize {
     //         (*r + 1, *c - 1),
     //     ];
 
-    //     let cum = match dirs.iter().map(|x| perims.contains(x)).collect::<Vec<bool>>()[0..8] {
+    //     let something = match dirs.iter().map(|x| perims.contains(x)).collect::<Vec<bool>>()[0..8] {
     //         [false, _, false, _, false, _, false, _] => 4,
     //         [true, _, _, _, true, _, _, _] => 0,
     //         [_, _, true, _, _, _, true, _] => 0,
@@ -148,11 +148,11 @@ fn get_sides(shape: &Vec<(u32, u32)>) -> usize {
     //         _ => 0
     //     };
 
-    //     let shit: Vec<&(u32, u32)> = dirs.iter().filter(|x| perims.contains(*x)).collect();
+    //     let another: Vec<&(u32, u32)> = dirs.iter().filter(|x| perims.contains(*x)).collect();
 
-    //     let mut new_sides = 4 - shit.len();
+    //     let mut new_sides = 4 - another.len();
 
-    //     if shit.iter().any(|x| visit.contains(*x)) {
+    //     if another.iter().any(|x| visit.contains(*x)) {
     //         new_sides = 0;
     //     }
 
